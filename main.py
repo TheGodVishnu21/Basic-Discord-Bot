@@ -1,33 +1,24 @@
 import discord
 from discord.ext import commands
 
-# Create a bot instance
-bot = commands.Bot(command_prefix='!')
+# Define the intents that we need
+intents = discord.Intents.default()
+intents.messages = True  # For receiving messages
+intents.guilds = True    # For server-specific commands
 
-# Event: Bot is ready and connected to Discord
+# The bot initialization with intents
+bot = commands.Bot(command_prefix='!', intents=intents)
+
+# Event listener for when the bot is ready
 @bot.event
 async def on_ready():
-    print(f'Logged in as {bot.user.name} ({bot.user.id})')
+    print(f'Logged in as {bot.user.name} (ID: {bot.user.id})')
+    print('------')
 
-# Event: New message is received
-@bot.event
-async def on_message(message):
-    # Ignore messages sent by the bot itself to prevent infinite loops
-    if message.author == bot.user:
-        return
+# Command to respond with a greeting
+@bot.command(name='hello', help='Responds with a greeting')
+async def hello(ctx):
+    await ctx.send('Hello! I am a bot of The God Empire, bestowed with intents!')
 
-    # Process commands
-    await bot.process_commands(message)
-
-# Command: Ping
-@bot.command()
-async def ping(ctx):
-    await ctx.send('Pong!')
-
-# Command: Say
-@bot.command()
-async def say(ctx, *, message):
-    await ctx.send(message)
-
-# Run the bot with your bot token
-bot.run('YOUR_BOT_TOKEN')
+# Replace 'your_token_here' with the actual token.
+bot.run('your_token_here')
