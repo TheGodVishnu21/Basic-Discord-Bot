@@ -1,2 +1,2 @@
 # Basic-Discord-Bot
-A very Basic discord.py for starters.
+A very Basic discord.py for Beginners.
