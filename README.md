@@ -1,4 +1,3 @@
-markdown
 # The God Empire Bot
 
 Welcome to the README for The God Empire's Discord Bot! This bot is crafted to serve the members of The God Empire Discord server with an array of functionalities, paving the way for an engaging community experience.
