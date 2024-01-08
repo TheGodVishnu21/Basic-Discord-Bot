@@ -27,7 +27,7 @@ pip install discord.py
 
 ### Configuration
 
-1. Open `bot.py` with your favorite text editor.
+1. Open `main.py` with your favorite text editor.
 2. Replace `'your_token_here'` with your bot's actual token.
 
 ## Running the Bot
@@ -35,7 +35,7 @@ pip install discord.py
 With your token set, you can now run the bot using the following command:
 
 
-python bot.py
+python main.py
 
 
 ## Features
