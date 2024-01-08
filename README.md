@@ -1,6 +1,6 @@
-# The God Empire Bot
+# Basic Discord Bot
 
-Welcome to the README for The God Empire's Discord Bot! This bot is crafted to serve the members of The God Empire Discord server with an array of functionalities, paving the way for an engaging community experience.
+Welcome to the README of Basic Discord Bot! This bot is crafted to serve the members of The God Empire Discord server with an array of functionalities, paving the way for an engaging community experience.
 
 ## Getting Started
 
