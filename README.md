@@ -1,4 +1,4 @@
-```markdown
+markdown
 # The God Empire Bot
 
 Welcome to the README for The God Empire's Discord Bot! This bot is crafted to serve the members of The God Empire Discord server with an array of functionalities, paving the way for an engaging community experience.
@@ -14,9 +14,9 @@ Before you can run the bot, you need to set up a few things:
 
 To install discord.py, run the following command:
 
-```
+
 pip install discord.py
-```
+
 
 ### Setting Up Your Bot
 
@@ -35,9 +35,9 @@ pip install discord.py
 
 With your token set, you can now run the bot using the following command:
 
-```
+
 python bot.py
-```
+
 
 ## Features
 
@@ -59,4 +59,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - The Discord API
 - Python and discord.py library creators and contributors
 
-```
