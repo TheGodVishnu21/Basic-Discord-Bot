@@ -2,10 +2,7 @@ import discord
 from discord.ext import commands
 
 # Define the intents that we need
-intents = discord.Intents.default()
-intents.messages = True  # For receiving messages
-intents.guilds = True    # For server-specific commands
-
+intents = discord.Intents.all()
 # The bot initialization with intents
 bot = commands.Bot(command_prefix='!', intents=intents)
 
