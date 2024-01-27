@@ -15,10 +15,18 @@ async def on_ready():
     print(f'Logged in as {bot.user.name} (ID: {bot.user.id})')
     print('------')
 
-# Command to respond with a greeting
-@bot.command(name='hello', help='Responds with a greeting')
+@bot.command()
+async def ping(ctx):
+    latency = round(bot.latency * 1000)
+    await ctx.send(f'Pong! Latency: {latency}ms')
+
+@bot.command()
+async def echo(ctx, *, message):
+    await ctx.send(message)
+
+@bot.command()
 async def hello(ctx):
-    await ctx.send('Hello! I am a bot of The God Empire, bestowed with intents!')
+    await ctx.send('Hello!')
 
 # Replace 'your_token_here' with the actual token.
 bot.run('your_token_here')
